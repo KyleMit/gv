@@ -79,7 +79,57 @@ select {
 }
 
 
+/* layout */
 
+body.page {
+    max-width: 50rem;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+header.header {
+    height: 7rem;
+}
+
+main.content {
+    padding: 2rem;
+}
+
+footer.footer {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252525;
+    color: white;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+/* header */
+
+
+span.logo {
+    float: left;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 2rem;
+    margin: 0.4rem;
+}
+
+header.header-hero {
+    margin-top: .2rem;
+}
+span.title {
+    font-size: 3rem;
+}
+
+
+
+/* social */
 .social-links {
     display: flex;
 }
@@ -94,17 +144,37 @@ select {
 }
 
 
+/* contacts */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+}
 
-.contact-links a {
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact-links a.btn {
     display: inline-flex;
     align-items: center;
-    padding: 0.7rem 1.2rem;
+    padding: 0.4rem 0.8rem;
     margin: 1rem;
-    border: 2px solid black;
+    border: 2px solid #000;
     border-radius: 3px;
+    color: black;
+    text-decoration: none;
+    transition: background .4s ease;
+}
+
+
+.contact-links a.btn:hover {
+    background: #d7deff;
 }
 
 .contact-links svg {
     height: 23px;
     margin-right: 1rem;
 }
+
+
