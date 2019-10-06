@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" > 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+    {# Favicons #}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/fav/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/images/icons/fav/safari-pinned-tab.svg" color="#00843d">
+    <meta name="msapplication-TileColor" content="#00843d">
+    <meta name="msapplication-config" content="/assets/images/icons/fav/browserconfig.xml">
+    
+    {# Theme color for browser chrome (chrome android) #}
+    <meta name="theme-color" content="#00843d">
+    <link rel="manifest" href="/manifest.json">
+
+    {# Primary Meta Tags #}
+    <title>Grain and Vein Studios</title>
+    <meta name="title" content="Grain and Vein Studios">
+    <meta name="description" content="{{summary}}">
+    <meta name="robots" content="{{config.metaRobots}}">
+    <link rel="canonical" href="{{config.baseUrlCanonical}}{{page.url}}">
+    
+    {# Open Graph / Facebook #}
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{config.baseUrl}}{{page.url}}">
+    <meta property="og:title" content="{{page_title}} | doc gov">
+    <meta property="og:description" content="{{summary}}">
+    <meta property="og:image" content="{{config.baseUrl}}/assets/images/thumbnail.png">
+
+    {# Twitter #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{page_title}}">
+    <meta name="twitter:description" content="{{summary}}">
+    <meta name="twitter:image" content="{{config.baseUrl}}/assets/images/thumbnail.png">
+
+    {# Google Fonts #}
+    {# <link href="https://fonts.googleapis.com/css?family=Fira+Code|Noto+Serif|Roboto&display=swap" rel="stylesheet"> #}
+
+    {# capture the CSS content as a Nunjucks variable #}
+    {% set css %}
+        {% include "assets/styles/styles.css" %}
+    {% endset %}
+    {# feed it through our cssmin filter to minify #}
+    <style type="text/css">{{ css | cssmin | safe }}</style>
+</head>
+<body class="page ">
+
+   
+    <header class="header">
+        <span>GV</span>
+        <span>Grain and Vein Studios</span>
+    </header>
+
+
+    <main class="content">
+        
+        {{ content | safe }}
+
+    </main>
+
+    <footer class="footer">
+        
+        <div class="copy-line">
+            <span class="copyright">&copy; 2019 Grain and Vein Studios </span>
+        </div>
+
+    </footer>
+
+    {# capture the JS content as a Nunjucks variable #}
+    {% set js %}
+        {% include "assets/scripts/site.js" %}
+    {% endset %}
+    {# feed it through our cssmin filter to minify #}
+    <script type="text/javascript">{{ js | jsmin | safe }}</script>
+
+
+</body>
+
+</html>
