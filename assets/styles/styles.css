@@ -132,8 +132,12 @@ header.header-hero {
 }
 span.title {
     font-size: 3rem;
+    font-family: LucidaCalligraphyEF;
 }
 
+h1,h2,h3 {
+  font-family: LucidaCalligraphyEF;
+}
 
 
 /* social */

@@ -33,6 +33,7 @@
 
     {# capture the CSS content and inline #}
     {% set css %}
+        {% include "assets/fonts/lucida.css" %}
         {% include "assets/styles/styles.css" %}
     {% endset %}
     <style type="text/css">{{ css | cssmin | safe }}</style>
