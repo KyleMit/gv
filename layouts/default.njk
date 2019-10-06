@@ -32,14 +32,16 @@
 
 
     {# capture the CSS content and inline #}
-    {% set css %}{% include "assets/styles/styles.css" %}{% endset %}
+    {% set css %}
+        {% include "assets/styles/styles.css" %}
+    {% endset %}
     <style type="text/css">{{ css | cssmin | safe }}</style>
 </head>
 <body class="page ">
 
    
     <header class="header-bar">
-        <span class="logo">GV</span>        
+        {% include "assets/images/logo.svg" %}    
     </header>
 
     <header class="header-hero">

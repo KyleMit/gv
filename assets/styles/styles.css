@@ -118,6 +118,13 @@ span.logo {
     padding: 0.3rem;
     font-size: 2rem;
     margin: 0.4rem;
+    font-family: JupiterAlts;
+}
+
+.header-bar svg {
+  width: 58px;
+  float: left;
+  margin-top: 11px;
 }
 
 header.header-hero {
