@@ -30,5 +30,6 @@
          url('/assets/fonts/webfonts/3A4A4F_0_0.woff2') format('woff2'),
          url('/assets/fonts/webfonts/3A4A4F_0_0.woff') format('woff'),
          url('/assets/fonts/webfonts/3A4A4F_0_0.ttf') format('truetype');
+    font-display: swap;
 }
  
