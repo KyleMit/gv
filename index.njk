@@ -3,11 +3,22 @@ layout: default.njk
 title: Home
 ---
 
-<section>
+<section id="follow">
+
     <h2>Follow</h2>
-    <a href="">Facebook</a>
-    <a href="">Instagram</a>
-    <a href="">Etsy</a>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/garinandveinstudios/">
+            {% include "assets/images/fa/facebook.svg" %}
+        </a>
+        <a href="https://www.instagram.com/grainandveinstudios/">
+            {% include "assets/images/fa/instagram.svg" %}
+        </a>
+        <a href="https://www.etsy.com/shop/GrainandVeinStudios">
+            {% include "assets/images/fa/etsy.svg" %}
+        </a>
+    </div>
+    
 </section>
 
 <section>
@@ -18,6 +29,16 @@ title: Home
 
 <section>
     <h2>Contact</h2>
-    <a href="">Email</a>
-    <a href="">Call</a>
+
+    <div class="contact-links">
+        <a href="tel:+18022790624">
+            {% include "assets/images/fa/phone.svg" %}
+            Call
+        </a>
+        <a href="mailto:contact@grain-and-vein.com">
+            {% include "assets/images/fa/envelope.svg" %}
+            Email
+        </a>
+    </div>
+
 </section>
