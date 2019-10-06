@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
 
     // static passthroughs
     eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("favicon.cio");
+    eleventyConfig.addPassthroughCopy("favicon.ico");
 
     // add filters
     eleventyConfig.addFilter("cssmin", require("./plugins/clean-css.js") );
