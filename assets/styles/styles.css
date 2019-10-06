@@ -133,13 +133,18 @@ footer.footer {
     color: #f4f3ff;
 }
 
+/* elements */
 section {
-    margin-top: 3rem;
+    margin-top: 2rem;
+}
+section:first-child {
+  margin-top: 1rem;
+}
+p {
+  margin: 0.5rem 0;
 }
 
 /* header */
-
-
 span.logo {
     float: left;
     border: 2px solid black;
@@ -196,7 +201,7 @@ h1,h2,h3 {
 }
 
 .social-links svg {
-    height: 40px;
+    height: 50px;
 }
 
 .social-links a:hover {
@@ -280,6 +285,7 @@ h1,h2,h3 {
 @media (max-width: 500px) {
   main.content {
       padding: 1rem;
+      padding-bottom: 4rem;
   }
 
   .gallery img {
